@@ -21,7 +21,7 @@ WORKDIR ${HUGO_SITE}
 VOLUME ${HUGO_SITE}
 
 EXPOSE 1313
-EXPOSE 80
+
 CMD hugo server \
     --bind 0.0.0.0 \
     --navigateToChanged \
