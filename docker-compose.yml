@@ -2,9 +2,10 @@ version: '2'
 
 services:
   hugo:
-    image: yanqd0/hugo
+    image: hugo-custom
+    build: .
     volumes:
       - .:/srv/hugo
     ports:
-      - 80:1313
+      - 1313:1313
     restart: unless-stopped
